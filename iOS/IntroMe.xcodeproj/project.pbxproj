@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2276DBF12A3E36F500F62690 /* ReSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2276DBF02A3E36F500F62690 /* ReSwift */; };
 		229714472A30C4470096C507 /* IntroMeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229714462A30C4470096C507 /* IntroMeApp.swift */; };
 		229714492A30C4470096C507 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229714482A30C4470096C507 /* ContentView.swift */; };
 		2297144B2A30C4490096C507 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2297144A2A30C4490096C507 /* Assets.xcassets */; };
@@ -14,6 +15,8 @@
 		229714582A30C44A0096C507 /* IntroMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229714572A30C44A0096C507 /* IntroMeTests.swift */; };
 		229714622A30C44A0096C507 /* IntroMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229714612A30C44A0096C507 /* IntroMeUITests.swift */; };
 		229714642A30C44A0096C507 /* IntroMeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229714632A30C44A0096C507 /* IntroMeUITestsLaunchTests.swift */; };
+		229714712A30CD750096C507 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229714702A30CD750096C507 /* Profile.swift */; };
+		22AD98232A30E46600EA8593 /* Experience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AD98222A30E46600EA8593 /* Experience.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,8 @@
 		2297145D2A30C44A0096C507 /* IntroMeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IntroMeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		229714612A30C44A0096C507 /* IntroMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroMeUITests.swift; sourceTree = "<group>"; };
 		229714632A30C44A0096C507 /* IntroMeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroMeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		229714702A30CD750096C507 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		22AD98222A30E46600EA8593 /* Experience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Experience.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2276DBF12A3E36F500F62690 /* ReSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +100,8 @@
 		229714452A30C4470096C507 /* IntroMe */ = {
 			isa = PBXGroup;
 			children = (
+				22A37C562A3E04F3007DF2B6 /* Redux */,
+				22AD98212A30E44600EA8593 /* Model */,
 				229714462A30C4470096C507 /* IntroMeApp.swift */,
 				229714482A30C4470096C507 /* ContentView.swift */,
 				2297144A2A30C4490096C507 /* Assets.xcassets */,
@@ -127,6 +135,62 @@
 			path = IntroMeUITests;
 			sourceTree = "<group>";
 		};
+		22A37C542A3E04D4007DF2B6 /* Middleware */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Middleware;
+			sourceTree = "<group>";
+		};
+		22A37C562A3E04F3007DF2B6 /* Redux */ = {
+			isa = PBXGroup;
+			children = (
+				22A37C542A3E04D4007DF2B6 /* Middleware */,
+				22AD98242A30E67D00EA8593 /* State */,
+				22AD98282A30E70000EA8593 /* Action */,
+				22AD982B2A30E74C00EA8593 /* Reducer */,
+				22AD982E2A31304F00EA8593 /* Store */,
+			);
+			path = Redux;
+			sourceTree = "<group>";
+		};
+		22AD98212A30E44600EA8593 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				229714702A30CD750096C507 /* Profile.swift */,
+				22AD98222A30E46600EA8593 /* Experience.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		22AD98242A30E67D00EA8593 /* State */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		22AD98282A30E70000EA8593 /* Action */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		22AD982B2A30E74C00EA8593 /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Reducer;
+			sourceTree = "<group>";
+		};
+		22AD982E2A31304F00EA8593 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +207,9 @@
 			dependencies = (
 			);
 			name = IntroMe;
+			packageProductDependencies = (
+				2276DBF02A3E36F500F62690 /* ReSwift */,
+			);
 			productName = IntroMe;
 			productReference = 229714432A30C4470096C507 /* IntroMe.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +282,9 @@
 				Base,
 			);
 			mainGroup = 2297143A2A30C4470096C507;
+			packageReferences = (
+				2276DBEF2A3E36F500F62690 /* XCRemoteSwiftPackageReference "ReSwift" */,
+			);
 			productRefGroup = 229714442A30C4470096C507 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,7 +328,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				229714492A30C4470096C507 /* ContentView.swift in Sources */,
+				229714712A30CD750096C507 /* Profile.swift in Sources */,
 				229714472A30C4470096C507 /* IntroMeApp.swift in Sources */,
+				22AD98232A30E46600EA8593 /* Experience.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,11 +492,13 @@
 				DEVELOPMENT_TEAM = JY22C8NC68;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Intro Me";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -449,11 +523,13 @@
 				DEVELOPMENT_TEAM = JY22C8NC68;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Intro Me";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -583,6 +659,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2276DBEF2A3E36F500F62690 /* XCRemoteSwiftPackageReference "ReSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReSwift/ReSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2276DBF02A3E36F500F62690 /* ReSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2276DBEF2A3E36F500F62690 /* XCRemoteSwiftPackageReference "ReSwift" */;
+			productName = ReSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2297143B2A30C4470096C507 /* Project object */;
 }
