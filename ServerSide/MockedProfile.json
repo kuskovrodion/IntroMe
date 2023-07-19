@@ -1,0 +1,11 @@
+{
+  "personal_info": {
+    "first_name": "Rodion",
+    "last_name": "Kuskov",
+    "age": 25,
+    "email": "rodion.kuskov@gmail.com"
+  },
+  "work_info": {
+    "position": "iOS Software Engineer"
+  }
+}
